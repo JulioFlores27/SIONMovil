@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "481811051816",
+    "project_id": "sionmovil",
+    "storage_bucket": "sionmovil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481811051816:android:d27ac786955803c6750c1d",
+        "android_client_info": {
+          "package_name": "com.nervion.sionmovil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "481811051816-vca902g29935mnnihhh52o858v5a2lvi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nervion.sionmovil",
+            "certificate_hash": "8035b2c5716e2f057d3b9a0da7338006b9992a77"
+          }
+        },
+        {
+          "client_id": "481811051816-21g97pl77qtkiisu7dcmuhiu22d52mgq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwLPbq2I5DOInLPKZHy_sX_3IecEKYnxY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "481811051816-21g97pl77qtkiisu7dcmuhiu22d52mgq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

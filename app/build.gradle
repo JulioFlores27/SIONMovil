@@ -1,0 +1,78 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 31
+
+    defaultConfig {
+        applicationId "com.nervion.sionmovil"
+        minSdkVersion 22
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            res {
+                srcDirs 'src\\main\\res',
+                        'src\\main\\res\\layouts\\fragments',
+                        'src\\main\\res\\layouts',
+                        'src\\main\\res\\layouts\\adaptors',
+                        'src\\main\\res\\layouts\\alertbuilders'
+            }
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.4.1'
+    implementation 'androidx.navigation:navigation-ui:2.4.1'
+    testImplementation 'junit:junit:'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //    ESTO PARA DAR ACCESO A INTERNET DE LA PASE DE DATOS MYSQL (HOSTINGER)
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+
+    // ESTO ES PARA CREAR LIBRERIAS PARTICULARMENTE A FIREBASE
+    implementation platform('com.google.firebase:firebase-bom:28.4.1')
+    implementation 'com.firebaseui:firebase-ui-auth:7.2.0'
+    implementation 'com.google.firebase:firebase-messaging:23.0.2'
+    implementation 'com.google.firebase:firebase-firestore'
+
+    // ESTO ES PARA CREAR LIBRERIAS PARA GOOGLE SERVICES ESPECIALMENTE PARA LA CAMARA QR
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+
+    // ESTO ES PARA CREAR LIBRERIAS DE GOOGLE SERVICES SOBRE MAPAS Y LOCALIZACIONES
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
+
+    // ESTO ES PARA CREAR GRAFICAS EN LA APLICACIÓN
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+}

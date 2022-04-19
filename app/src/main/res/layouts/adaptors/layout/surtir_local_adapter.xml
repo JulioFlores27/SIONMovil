@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slArea"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="7dp">
+        <TextView
+            android:id="@+id/slPartida"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="No." />
+        <TextView
+            android:id="@+id/slRFC"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:text="Ra-Fi-Co"
+            android:textColor="@color/purple_500" />
+        <TextView
+            android:id="@+id/slClave"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5sp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="Producto" />
+        <TextView
+            android:id="@+id/slEnvase"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5sp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:text="Envase" />
+        <TextView
+            android:id="@+id/slCantidadSolicitada"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:text="Cant Solicita" />
+        <TextView
+            android:id="@+id/slCantidadPendiente"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5sp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:text="Cant Pendiente" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp">
+        <TextView
+            android:id="@+id/slLote"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5sp"
+            android:textSize="18sp"
+            android:layout_weight=".5"
+            android:gravity="center|end"
+            android:layout_gravity="start"
+            android:text="Lote"
+            android:textColor="@color/purple_500" />
+        <TextView
+            android:id="@+id/slCantidad"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5sp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight=".5"
+            android:gravity="center|end"
+            android:text="Cantidad" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@color/purple_500"/>
+</LinearLayout>

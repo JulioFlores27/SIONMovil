@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textColor="@color/purple_500"
+        android:text="Iniciar Sesión" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/loginCorreoTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/teal_200"
+        android:text="Correo Electrónico:" />
+    <EditText
+        android:id="@+id/loginCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:hint="Ingrese Correo Electrónico"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <TextView
+        android:id="@+id/loginPasswordTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/teal_200"
+        android:text="Contraseña:" />
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:hint="Ingrese Contraseña"
+        android:autofillHints="password"
+        android:inputType="textPassword" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresar Sistema"
+        android:textStyle="bold" />
+</LinearLayout>

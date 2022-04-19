@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Vigilancia.SalidasVigilancia">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"
+                android:text="Folio:" />
+
+            <EditText
+                android:id="@+id/svFolio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:hint="Ingrese Folio" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Pedido:" />
+            <EditText
+                android:id="@+id/svPedido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:hint="Ingrese Pedido" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:layout_weight="1.3"
+                android:gravity="center_vertical"
+                android:text="Producto:" />
+            <EditText
+                android:id="@+id/svProducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:inputType="textCapCharacters"
+                android:textSize="18sp"
+                android:hint="Ingrese Clave" />
+            <ImageButton
+                android:id="@+id/svCamara"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/camara" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"
+                android:text="Lote:" />
+            <EditText
+                android:id="@+id/svLote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:hint="Ingrese Lote" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Envase:" />
+            <EditText
+                android:id="@+id/svEnvase"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="textCapCharacters"
+                android:hint="Ingrese Envase" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:layout_weight="1.3"
+                android:gravity="center_vertical"
+                android:text="Cantidad:" />
+            <EditText
+                android:id="@+id/svCantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:inputType="numberDecimal"
+                android:textSize="18sp"
+                android:hint="Ingrese Cantidad" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/svAgregar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:text="Agregar Producto" />
+            <Button
+                android:id="@+id/svTerminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:text="Terminar Folio" />
+            <ImageButton
+                android:id="@+id/svActualizar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/actualizar" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSalidasVigilancia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_500"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Corregir" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="15sp"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold"
+            android:text="Clave Corregida:" />
+        <EditText
+            android:id="@+id/icClaveCorregida"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textSize="16sp"
+            android:hint="Clave"
+            android:inputType="textCapCharacters" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="15sp"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold"
+            android:text="Cantidad Corregida:" />
+        <EditText
+            android:id="@+id/icCantidadCorregida"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textSize="16sp"
+            android:hint="Cantidad"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="15sp"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold"
+            android:text="Ubicación Corregida:" />
+        <EditText
+            android:id="@+id/icUbicacionCorregida"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textSize="16sp"
+            android:hint="Ubicación"
+            android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="15sp"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold"
+            android:text="Lote Corregida:" />
+        <EditText
+            android:id="@+id/icLoteCorregida"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textSize="16sp"
+            android:hint="Lote"
+            android:inputType="number" />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical" >
+        <Button
+            android:id="@+id/botonGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:text="GUARDAR" />
+        <Button
+            android:id="@+id/botonEliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:text="ELIMINAR REGISTRO" />
+        <Button
+            android:id="@+id/botonCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:text="Cancelar" />
+    </LinearLayout>
+</LinearLayout>

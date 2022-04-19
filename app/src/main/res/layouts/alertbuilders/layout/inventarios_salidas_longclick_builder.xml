@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_500"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Cambio de Envase" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <TextView
+        android:id="@+id/isProductoOriginal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Producto Original:" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <TextView
+        android:id="@+id/isEnvaseOriginal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Envase Original:" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <EditText
+        android:id="@+id/isTextoCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad a Convertir"
+        android:inputType="numberDecimal"
+        tools:ignore="TouchTargetSizeCheck" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/teal_200" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <Switch
+        android:id="@+id/isEnviarEntinte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:checked="false"
+        android:text="Enviar a Entinte"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        android:thumbTint="@color/purple_700"
+        android:trackTint="@color/purple_200"
+        tools:ignore="TouchTargetSizeCheck" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/teal_200" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/isProductoConvertido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="Producto Convertido: " />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/isEnvaseConvertido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_700"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="Envase Convertido: " />
+
+        <Spinner
+            android:id="@+id/isenvaseSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <TextView
+        android:id="@+id/isCantidadConvertida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Cantidad Convertida:" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/botonCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:text="Cancelar" />
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/botonTransformar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/purple_500"
+            android:enabled="false"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:text="TRANSFORMAR" />
+    </LinearLayout>
+</LinearLayout>

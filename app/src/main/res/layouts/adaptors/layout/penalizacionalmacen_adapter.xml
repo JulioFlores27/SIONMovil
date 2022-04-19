@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/paArea"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="7dp">
+        <TextView
+            android:id="@+id/paFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5sp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="Fecha Completa" />
+        <TextView
+            android:id="@+id/paHora"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5sp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="Hora Completa" />
+        <TextView
+            android:id="@+id/paCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5sp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="Cantidad" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp">
+        <TextView
+            android:id="@+id/paCorreoPenalizado"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5sp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:layout_gravity="start"
+            android:text="Usuario Penalizado"
+            android:textColor="@color/purple_500" />
+        <TextView
+            android:id="@+id/paCantidadEscaneada"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5sp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:layout_gravity="end"
+            android:text="Cantidad Escaneada"
+            android:textColor="@android:color/holo_green_dark" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp">
+        <TextView
+            android:id="@+id/paObservaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5sp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:layout_gravity="start"
+            android:text="Observaciones" />
+        <TextView
+            android:id="@+id/paRestantes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5sp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:layout_gravity="end"
+            android:text="Restantes"
+            android:textColor="@color/purple_500" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@color/purple_500"/>
+</LinearLayout>

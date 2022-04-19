@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="7dp">
+        <TextView
+            android:id="@+id/chLote"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5sp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="Lote" />
+        <TextView
+            android:id="@+id/chComentarioCalidad"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Comentario Calidad" />
+        <TextView
+            android:id="@+id/chFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:layout_marginEnd="5sp"
+            android:text="Fecha" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="7dp">
+        <TextView
+            android:id="@+id/chUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_marginStart="5sp"
+            android:layout_weight="5"
+            android:gravity="center|start"
+            android:textColor="@color/purple_500"
+            android:text="Usuario" />
+        <TextView
+            android:id="@+id/chHora"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:layout_marginEnd="5sp"
+            android:text="Hora" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="7dp">
+        <TextView
+            android:id="@+id/chViscosidad"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Viscosidad" />
+        <TextView
+            android:id="@+id/chDensidad"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/purple_500"
+            android:text="Densidad" />
+        <TextView
+            android:id="@+id/chSolidos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Sólidos" />
+        <TextView
+            android:id="@+id/chBrillo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/purple_500"
+            android:text="Brillo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="7dp">
+        <TextView
+            android:id="@+id/chObservaciones2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/purple_500"
+            android:text="Observaciones" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@color/purple_500"/>
+</LinearLayout>

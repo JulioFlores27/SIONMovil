@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="7dp">
+        <TextView
+            android:id="@+id/eaProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5sp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="Producto" />
+        <TextView
+            android:id="@+id/eaEnvase"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Envase" />
+        <TextView
+            android:id="@+id/eaCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:layout_marginEnd="5sp"
+            android:text="Cantidad" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="7dp">
+        <TextView
+            android:id="@+id/eaLote"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_marginStart="5sp"
+            android:layout_weight="1"
+            android:textColor="@color/purple_500"
+            android:gravity="center|start"
+            android:text="Lote" />
+        <TextView
+            android:id="@+id/eaRFC"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@color/purple_500"
+            android:gravity="center|end"
+            android:layout_marginEnd="5sp"
+            android:text="R-F-C" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@color/purple_500"/>
+</LinearLayout>

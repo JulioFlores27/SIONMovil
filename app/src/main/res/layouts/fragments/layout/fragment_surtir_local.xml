@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Surtir.SurtirLocal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/slSalida"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"
+            android:layout_weight=".1"
+            android:layout_marginLeft="10dp"
+            android:hint="Ingrese Salida"/>
+        <ImageButton
+            android:id="@+id/slActualizar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/actualizar"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSurtirLocal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

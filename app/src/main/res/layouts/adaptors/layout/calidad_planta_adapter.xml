@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="7dp">
+        <TextView
+            android:id="@+id/cpLote"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5sp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="Lote" />
+        <TextView
+            android:id="@+id/cpMateriaPrima"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Comentario Calidad" />
+        <TextView
+            android:id="@+id/cpFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:layout_marginEnd="5sp"
+            android:text="Fecha" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="7dp">
+        <TextView
+            android:id="@+id/cpUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_marginStart="5sp"
+            android:layout_weight="5"
+            android:gravity="center|start"
+            android:textColor="@color/purple_500"
+            android:text="Usuario" />
+        <TextView
+            android:id="@+id/cpHora"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:layout_marginEnd="5sp"
+            android:text="Hora" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@color/purple_500"/>
+</LinearLayout>
