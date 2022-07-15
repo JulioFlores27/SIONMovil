@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsuarioActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textColor="@color/purple_500"
+        android:text="Crear Usuario" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <TextView
+        android:id="@+id/crearCorreoTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/teal_200"
+        android:text="Correo Electrónico:"
+        android:autofillHints="emailAddress"/>
+    <EditText
+        android:id="@+id/crearCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:hint="Ingrese Correo Electrónico"
+        android:inputType="textEmailAddress" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <TextView
+        android:id="@+id/crearNombreTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/teal_200"
+        android:text="Nombre(s) y Apellidos:" />
+    <EditText
+        android:id="@+id/crearNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:hint="Ingrese Nombre(s) Completo"
+        android:inputType="textPersonName"
+        android:autofillHints="name"/>
+    <TextView
+        android:id="@+id/crearAreaTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/teal_200"
+        android:text="Área de Trabajo:" />
+    <Spinner
+        android:id="@+id/crearArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <TextView
+        android:id="@+id/crearTiendaTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/teal_200"
+        android:text="Tienda de Origen:" />
+    <Spinner
+        android:id="@+id/crearTienda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <TextView
+        android:id="@+id/crearPasswordTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/teal_200"
+        android:text="Contraseña:" />
+    <EditText
+        android:id="@+id/crearPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:hint="Ingrese Contraseña"
+        android:inputType="textPassword"
+        android:autofillHints="password"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <Button
+        android:id="@+id/crearButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Usuario"
+        android:textStyle="bold" />
+</LinearLayout>

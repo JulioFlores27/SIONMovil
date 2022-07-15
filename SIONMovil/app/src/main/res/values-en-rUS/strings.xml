@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SIONMovil</string>
+    <string name="bienvenido">Welcome:</string>
+    <string name="tienda">Store:</string>
+    <string name="moduloInventarios">Inventory</string>
+    <string name="moduloEntregas">Deliveries</string>
+    <string name="moduloBuscador">Searcher</string>
+    <string name="moduloMovimientos">Movements</string>
+    <string name="moduloVigilancia">Surveillance</string>
+    <string name="moduloEntinte">Inks</string>
+    <string name="moduloCalidad">Quality</string>
+    <string name="moduloSurtir">Supplies</string>
+    <string name="moduloGraficas">Charts</string>
+    <string name="moduloPenalizacion">Penalty</string>
+    <string name="moduloConfiguracion">Settings</string>
+    <string name="moduloCrear">Create User</string>
+</resources>

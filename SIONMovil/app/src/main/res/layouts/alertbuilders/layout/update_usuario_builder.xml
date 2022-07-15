@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textColor="@color/purple_500"
+        android:text="Actualizando Perfil" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/teal_200"
+        android:text="Nombre(s) y Apellidos:" />
+    <EditText
+        android:id="@+id/updateNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:hint="Ingrese Nombre Completo"
+        android:inputType="textPersonName"
+        android:autofillHints="name"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/teal_200"
+        android:text="Área de Trabajo:" />
+    <Spinner
+        android:id="@+id/updateArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/teal_200"
+        android:text="Tienda:" />
+    <Spinner
+        android:id="@+id/updateTienda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Perfil"
+        android:textStyle="bold" />
+</LinearLayout>

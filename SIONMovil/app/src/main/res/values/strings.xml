@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SIONMovil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="title_activity_entregas" translatable="false">EntregasActivity</string>
+    <string name="title_activity_graficas" translatable="false">GraficasActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
+
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    <string name="bienvenido">Bienvenido:</string>
+    <string name="tienda">Tienda:</string>
+    <string name="moduloInventarios">Inventarios</string>
+    <string name="moduloEntregas">Entregas</string>
+    <string name="moduloBuscador">Buscador</string>
+    <string name="moduloMovimientos">Movimientos</string>
+    <string name="moduloVigilancia">Vigilancia</string>
+    <string name="moduloEntinte">Entinte</string>
+    <string name="moduloCalidad">Calidad</string>
+    <string name="moduloSurtir">Surtir</string>
+    <string name="moduloGraficas">Gráficas</string>
+    <string name="moduloPenalizacion">Penalización</string>
+    <string name="moduloConfiguracion">Configuración</string>
+    <string name="moduloCrear">Crear Usuario</string>
+</resources>
